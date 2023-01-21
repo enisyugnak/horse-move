@@ -6,11 +6,19 @@ to occupy all the tiles...
 
 ## How
 
-This is a simple chess board. You click on a tile and game starts.
+This is an 8x8 chess board. You click on a tile and game starts.
 you may only move as Knight in the chess game. so only L shape is allowed.
-once you occupy a tile, its disabled so you need to be very carefull not to stuck...
+once you occupy a tile, its disabled.
+so you need to be very carefull for your next move,
+or suddenly there may be no move at all and the game over.
 
-and yes, there is totally solution, even more than one...
+and yes, there is totally solution, even more than one.
+hope you enjoy playing.
+good luck...
+
+## Demo
+
+https://knight-move-game.web.app/
 
 ## Why...
 
@@ -18,49 +26,30 @@ Well, this is a very first game that I build with react just to practice and lea
 So I practiced some hooks, css grid and different class types for different states...
 and also keeping history for all the moves to allow player undo till the beginning was fun.
 
-hope you enjoy...
-
 ## Technologies Used
 
-JavaScript, CSS, React - (no dependencies)
+JavaScript, CSS, React, Firebase
 
-# Getting Started with Create React App
+# Installation & Setup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Clone down this repository. You will need node and npm installed globally on your machine.
 
-## Available Scripts
+## Installation:
 
-In the project directory, you can run:
+### npm install
 
-### `npm start`
+To Run Test Suite:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### npm test
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To Start Server:
 
-### `npm test`
+### npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To Visit App:
 
-### `npm run build`
+### localhost:3000/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### https://knight-move-game.web.app/
