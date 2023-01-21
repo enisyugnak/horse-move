@@ -4,6 +4,8 @@
 
 to occupy all the tiles...
 
+![game screenshot](knight-game/png?raw=true)
+
 ## How
 
 This is an 8x8 chess board. You click on a tile and game starts.
@@ -44,7 +46,7 @@ To Run Test Suite:
 
 To Start Server:
 
-### npm start
+### npm start
 
 To Visit App:
 
