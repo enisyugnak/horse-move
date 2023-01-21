@@ -4,7 +4,7 @@
 
 to occupy all the tiles...
 
-![game screenshot](knight-game.png?raw=true)
+![game screenshot](ss.png)
 
 ## How
 
