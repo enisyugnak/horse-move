@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import './style.css';
 import { nanoid } from 'nanoid';
 import BoardItem from './components/BoardItem';
+import GameButton from './components/GameButton';
 
 function App() {
   const boardSize = 64;
@@ -109,8 +110,6 @@ function App() {
   const elements = tiles.map((tile) => (
     <BoardItem
       key={tile.id}
-      row={tile.row}
-      col={tile.col}
       disabled={tile.disabled}
       status={tile.status}
       itemClicked={() => itemClicked(tile.id)}
@@ -119,21 +118,13 @@ function App() {
 
   return (
     <main>
-      <div className="board--frame">
-        <div className="board--holder"> {elements}</div>
-      </div>
-      <span className="message">{message}</span>
-      <div className="buttons">
-        {showReset && (
-          <button className="roll--btn" onClick={resetGame}>
-            RESET
-          </button>
-        )}
-        {showUndo && (
-          <button className="roll--btn" onClick={undoMove}>
-            UNDO
-          </button>
-        )}
+      <div className="game">
+        <div className="board"> {elements}</div>
+        <span className="message">{message}</span>
+        <div className="buttons">
+          {showReset && <GameButton title="RESET" clicked={resetGame} />}
+          {showUndo && <GameButton title="UNDO" clicked={undoMove} />}
+        </div>
       </div>
     </main>
   );
