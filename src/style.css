@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b2434;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+}
+
+main {
+  border-radius: 10px;
+  min-height: 420px;
+  width: 800px;
+  max-width: 1200px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board--frame {
+}
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.board--holder {
+  display: grid;
+  grid-template: auto auto / repeat(8, 1fr);
+}
+
+.board--item {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #0b2434;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.board--item[disabled] {
+  pointer-events: none;
+}
+
+.board--item.captured {
+  cursor: none;
+  pointer-events: none;
+  background-color: #444444;
+}
+
+.board--item.first-captured {
+  cursor: none;
+  pointer-events: none;
+  background-image: url('./horse.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+.board--item.chosen {
+  background-color: #b0b0b0;
+  transition: background-color 0.4s;
+}
+
+.board--item:hover {
+  background-image: url('./horse-g.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+.message {
+  margin-top: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.roll--btn {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding: 12px;
+  background: #222222;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.roll--btn:focus {
+  outline: none;
+}
+
+.roll--btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
