@@ -6,6 +6,10 @@ to occupy all the tiles...
 
 <img src="https://github.com/enisyugnak/horse-move/blob/master/ss.png" alt="" width=50%/>
 
+### demo
+
+https://knight-move-game.web.app/
+
 ## How
 
 This is an 8x8 chess board. You click on a tile and game starts.
@@ -17,10 +21,6 @@ or suddenly there may be no move at all and the game over.
 and yes, there is totally solution, even more than one.
 hope you enjoy playing.
 good luck...
-
-## Demo
-
-https://knight-move-game.web.app/
 
 ## Why...
 
