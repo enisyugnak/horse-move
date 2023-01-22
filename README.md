@@ -4,7 +4,7 @@
 
 to occupy all the tiles...
 
-![game screenshot](knight-game.png?raw=true)
+<img src="https://github.com/enisyugnak/horse-move/blob/master/ss.png" alt="" width=50%/>
 
 ## How
 
