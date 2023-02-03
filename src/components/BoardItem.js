@@ -8,21 +8,25 @@ export default function BoardItem(props) {
   useEffect(() => {
     switch (status) {
       case 'first-captured':
-        setStyleClass('board--item first-captured');
+        setStyleClass('first-captured');
         break;
       case 'captured':
-        setStyleClass('board--item captured');
+        setStyleClass('captured');
         break;
       case 'chosen':
-        setStyleClass('board--item chosen');
+        setStyleClass('chosen');
         break;
       default:
-        setStyleClass('board--item');
+        setStyleClass('');
         break;
     }
   }, [status]);
 
   return (
-    <div className={styleClass} disabled={disabled} onClick={itemClicked}></div>
+    <div
+      className={'board--item ' + styleClass}
+      disabled={disabled}
+      onClick={itemClicked}
+    ></div>
   );
 }

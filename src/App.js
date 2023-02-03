@@ -18,10 +18,24 @@ function App() {
     const captured = tiles.filter((item) => item.status === 'captured');
     const choosen = tiles.filter((item) => item.status === 'chosen');
     const left = tiles.length - captured.length;
+    let msg = '';
 
-    if (left < boardSize && choosen.length === 0) {
-      setMessage('oooopsss, there are still ' + left + ' pieces left');
+    if (choosen.length === 0) {
+      if (left < boardSize) {
+        msg = 'oooopsss, there are still ' + left + ' pieces left';
+      }
+      if (left < boardSize / 2) {
+        msg = 'HALF IS DONE ' + left + ' pieces left';
+      }
+      if (left < boardSize - 10) {
+        msg = 'SUPER...  but still ' + left + ' pieces left';
+      }
+      if (left < 5) {
+        msg = 'ALMOST DONE, only ' + left + ' pieces left';
+      }
+      setMessage(msg);
     }
+
     if (left === 0) {
       setMessage('perfect... you win');
     }
@@ -120,7 +134,7 @@ function App() {
     <main>
       <div className="game">
         <div className="board"> {elements}</div>
-        <span className="message">{message}</span>
+        <div className="message">{message}</div>
         <div className="buttons">
           {showReset && <GameButton title="RESET" clicked={resetGame} />}
           {showUndo && <GameButton title="UNDO" clicked={undoMove} />}
